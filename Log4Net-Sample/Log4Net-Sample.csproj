@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Log4Net_Sample</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="sample2.conf.xml" />
+    <None Remove="sample3.conf.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="sample3.conf.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sample2.conf.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.12" />
+  </ItemGroup>
+
+</Project>
