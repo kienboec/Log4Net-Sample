@@ -30,6 +30,8 @@ namespace Log4Net_Sample
             // throws no error if file not found :-(
             // use "copy always" / "content" for the config file in props-window
             XmlConfigurator.Configure(new System.IO.FileInfo("sample2.conf.xml"));
+
+            // Alternative: [assembly: log4net.Config.XmlConfigurator(ConfigFile = "log4net.config")]
         }
 
         public async Task Execute()

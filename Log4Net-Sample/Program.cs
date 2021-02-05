@@ -40,12 +40,19 @@ namespace Log4Net_Sample
             // - FATAL
             // - OFF
 
+            // Compliant Alternatives to .net core abstractions: 
+            //     https://docs.microsoft.com/en-us/archive/msdn-magazine/2016/april/essential-net-logging-with-net-core
+            // - NLog
+            // - Serilog
+
             #endregion
 
             IExecutor sample =
-                // new Sample1();
+                new Sample1();
                 // new Sample2();
-                new Sample3();
+                // new Sample3();
+                // new Sample4();
+                // new Sample5();
 
             await sample.Execute();
         }
