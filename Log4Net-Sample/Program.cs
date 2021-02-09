@@ -42,6 +42,7 @@ namespace Log4Net_Sample
 
             // Compliant Alternatives to .net core abstractions: 
             //     https://docs.microsoft.com/en-us/archive/msdn-magazine/2016/april/essential-net-logging-with-net-core
+			//     https://docs.microsoft.com/en-us/dotnet/core/extensions/logging
             // - NLog
             // - Serilog
 
