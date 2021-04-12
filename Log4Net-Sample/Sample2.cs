@@ -45,6 +45,15 @@ namespace Log4Net_Sample
                 await Task.Delay(TimeSpan.FromSeconds(5));
                 Log.Info("Exiting application.");
             }
+
+            /* sample output: 
+            3353[1] INFO Log4Net_Sample.Sample2(null) - Entering application.
+            8669[5] INFO Log4Net_Sample.Sample2(null) - Exiting application.
+            8669[5] INFO Log4Net_Sample.Sample2(null) - Entering application.
+            13688[4] INFO Log4Net_Sample.Sample2(null) - Exiting application.
+            13689[4] INFO Log4Net_Sample.Sample2(null) - Entering application.
+            18705[5] INFO Log4Net_Sample.Sample2(null) - Exiting application.
+            */
         }
     }
 }
